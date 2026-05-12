@@ -52,7 +52,7 @@ class stack {
         
         //peel/top operation: Retrive the value of topset element witchout removing
         void peek()
-       {
+         {
         if (top == NULL)
         {
             cout << "List is Empty." << endl;
@@ -117,7 +117,13 @@ int main()
             }
             else
             {
-                
+                cout << "Stack is empty. No top value." << endl;
+            }
+            break;
+
+        case 4:
+            cout << "Exiting program." << endl;
+            break;
         default:
             cout << "invalid choice. Try again." << endl;
             break;
@@ -126,3 +132,6 @@ int main()
     }
     return 0;
 };
+
+
+           
