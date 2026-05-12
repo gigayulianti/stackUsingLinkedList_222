@@ -79,4 +79,11 @@ class stack {
 
 int main()
 {
-    s
+    stack stack;
+
+    int choice = 0;
+    int value;
+
+    while (choice !=5)
+    {
+        
