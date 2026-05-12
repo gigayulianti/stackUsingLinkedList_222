@@ -3,47 +3,53 @@
 using namespace std;
 
 //node class representating a single node in the linked list
-class Node
+class node
 {
+    public:
+        int data;
+        node *next;
 
-        next = NULL;
-    }
-};
-public:
-    int data;
-    Node *next;
-
-    Node()
-    {
-//Stack class
-class stack
-{
-private:
-    Node *top; //pointer to the top node of the stack
-
-public:
-    stack()
-    {
-        top = NULL;
-    }
-    int push(int value)
-    {
-        ode *newNode = new Node();
-        newNode->data = value;
-        newNode->next = top;
-        topN = newNode;
-        cout << "Push value: " << value << endl;
-        return value;
-    }
-
-    //pop operation: Remove the topmost element from the stack
-    void pop()
-    {
-        if (isEmpty())
+        node()
         {
-            cout << "Stack is empty." << endl;
+            next;
+        }
+};
+
+//stack class
+class stack {
+    private:
+        Node* top;
+    
+    public:
+        Stack() {
+            top = NULL;
         }
 
-        Node *temp = top;
-        top = top->next;
+        //STACK class
+        void push(int value) {
+             Node* newNode = new Node();
+             newNode->data = value;
+             newNode->next = top;
+             top = newNode;
+             cout << "push value: " << value << endl;
+             return value;
+
+        }
+    
+         // peration: Remove the topmost elemen from the stack
+        void pop()
+        {
+            if (isempty())
+            {
+                cout << "stack is empety" << endly;
+            }
+
+            node *temp = top;
+            top = top->next;
+            cout << "popped value: " << temp->data << endl;
+
+        }
         
+        //peel/top operation: Retrive the value of topset element witchout removing
+        void peek()
+    
