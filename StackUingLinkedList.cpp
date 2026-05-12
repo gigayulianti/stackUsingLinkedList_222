@@ -28,7 +28,7 @@ public:
     }
     int push(int value)
     {
-        Node *newNode = new Node();
+        ode *newNode = new Node();
         newNode->data = value;
         newNode->next = top;
         topN = newNode;
@@ -40,4 +40,10 @@ public:
     void pop()
     {
         if (isEmpty())
+        {
+            cout << "Stack is empty." << endl;
+        }
+
+        Node *temp = top;
+        top = top->next;
         
