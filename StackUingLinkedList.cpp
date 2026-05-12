@@ -64,4 +64,12 @@ class stack {
             {
                 cout << current->data << " " << endl;
                 current = current->next;
-            
+            }
+            cout << endl;
+
+        } //return the value of the top node
+    }
+
+    //isEmpty operation: check of the stack is empty
+    bool isEmpty()
+    
