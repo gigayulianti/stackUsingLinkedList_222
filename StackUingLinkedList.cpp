@@ -9,3 +9,10 @@ class Node
         next = NULL;
     }
 };
+public:
+    int data;
+    Node *next;
+
+    Node()
+    {
+//Stack class
