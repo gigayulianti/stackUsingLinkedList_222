@@ -105,4 +105,10 @@ int main()
             {
                 stack.pop(); //pop the top element from the stack
             }
+            else 
+            {
+                cout << "Stack is empty. Cannot pop." << endl;
+            }
+            break;
+        case 3:
             
