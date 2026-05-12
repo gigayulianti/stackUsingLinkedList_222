@@ -52,4 +52,10 @@ class stack {
         
         //peel/top operation: Retrive the value of topset element witchout removing
         void peek()
-    
+       {
+        if (top == NULL)
+        {
+            cout << "List is Empty." << endl;
+        }
+        else
+        
