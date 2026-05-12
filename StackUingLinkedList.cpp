@@ -118,3 +118,11 @@ int main()
             else
             {
                 
+        default:
+            cout << "invalid choice. Try again." << endl;
+            break;
+        }
+        cout << endl;
+    }
+    return 0;
+};
